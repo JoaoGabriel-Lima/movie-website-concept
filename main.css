@@ -1,0 +1,330 @@
+/*---------Tudo---------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+:root {
+    --main-black: #1E202B;
+    --main-red: #FC4A1A;
+    --main-orange: #F7B733;
+    --main-gradient: linear-gradient(to right, var(--main-red), var(--main-orange));
+}
+html {
+    font-family: Source Sans Pro, sans-serif;
+}
+body {
+    width: 100%;
+    background-color: white;
+}
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--main-black);
+}
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--main-black);
+}
+p, li {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-black);
+}
+.btnWhite {
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 95px;
+    background: #6404F7;
+    background: -webkit-linear-gradient(top right, #F7B733, #FC4A1A);
+    background: -moz-linear-gradient(top right, #F7B733, #FC4A1A);
+    background: linear-gradient(to bottom left, #F7B733, #FC4A1A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btnGroup {
+    position: relative;
+    z-index: 1;
+}
+.whiteBG {
+    background-color: white;
+    display: block;
+    height: 60px;
+    width: 200px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
+}
+.btnColor {
+    display: inline-block;
+    text-decoration: none;
+    width: 200px;
+    height: 60px;
+    line-height: 59px;
+    text-align: center;
+    background-image: var(--main-gradient);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 7px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.26);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.26);
+}
+.btnOrange {
+    color: var(--main-red);
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 45px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+span {
+ color: var(--main-red)
+}
+
+/*---------Cabeçalho / Navigation Bar---------*/
+nav {
+    display: inline-block;
+    width: 100%;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    line-height: 100px;
+}
+.logo {
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+nav ul {
+    float: right;
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+header h1 {
+    color: white;
+    width: 55%;
+    margin: 90px 0 40px 0;
+}
+header p {
+    color: white;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+header {
+    background-image: url(Images/Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 900px;
+    width: 90%;
+    padding: 0 5%;
+}
+.ipad {
+    width: 60%;
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+}
+.iphone {
+    width: 40%;
+    position: absolute;
+    right: 4%;
+    top: 158px;
+    display: none;
+}
+.mobile {
+    display: none;
+}
+label {
+    margin: 0 40px 0 0;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 32px;
+    right: 0;
+}
+#toggle {
+    display: none;
+}
+.mobile ul {
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin: 0;
+    background-color: rgba(255,255,255,0.1);
+}
+.mobile ul li {
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+#toggle:checked ~ ul {
+    display: block;
+}
+/*---------Últimos Filmes---------*/
+.UltimasAtualizacoes {
+    width: 90%;
+    padding: 0 5%;
+    margin-bottom: 160px;
+}
+.sectionTitle h2, .sectionTitle a {
+    display: inline-block;
+    vertical-align: middle;
+}
+.sectionTitle a {
+    margin-left:
+}
+.sectionTitle {
+    margin: 50px 0 20px 0;
+}
+.UltimasAtualizacoes ul {
+    width:  100%;
+    display: flex;
+    list-style: none;
+}
+.UltimasAtualizacoes ul li img {
+    width:  92%;
+    margin: 4%;
+    border-radius: 9px;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.16);
+}
+/*---------Ads---------*/
+.PremiumAds {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto 200px auto;
+}
+.PremiumAds h1 {
+    margin-bottom: 40px;
+}
+
+/*---------Footrt---------*/
+footer a {
+    text-decoration: none;
+    color: var(--main-black);
+}
+footer ul {
+    list-style: none;
+    float: right;
+}
+footer ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+.copy a, .copy p {
+    display: inline-block;
+    vertical-align: middle;
+}
+.copy p {
+    margin-left: 20px;
+}
+footer {
+    width: 90%;
+    padding: 0 5%;
+}
+
+footer ul, .copy{
+    line-height: 80px;
+    display: inline-block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*--------responsive---------*/
+
+@media only screen and (max-width: 1200px) {
+    header {
+        height: 100vh;
+        min-height: 1000px;
+    }
+    header h1 {
+        margin: 50px 0 40px 0;
+    }
+    .btnWhite {
+        margin-bottom: 80px;
+    }
+    .PremiumAds {
+        width: 90%;
+    }
+    .ipad {
+        display: none;
+    }
+    .iphone {
+        display: block;
+    }
+}
+@media only screen and (max-width: 900px) {
+    header h1 {
+        width: 100%;
+    }
+    header {
+        background-position: left center;
+    }
+    .iphone {
+        display: none;
+    }
+    footer ul {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .copy {
+        text-align: center;
+        display: block;
+    }
+    footer ul li {
+        margin: 0 25px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .UltimasAtualizacoes ul{
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto 5px auto;
+    }
+    .btnOrange {
+        padding-left: 0px;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    nav ul li {
+        margin: 0;
+    }
+    footer ul li {
+        display: none
+    }
+    h1 {
+        font-size: 36px;
+    }
+}
